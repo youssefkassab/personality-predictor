@@ -1,0 +1,114 @@
+/* Modern smart form styles */
+.modern-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f3f4f6 100%);
+}
+
+.modern-form {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.modern-form h2 {
+    text-align: center;
+    color: #374151;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    color: #4b5563;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    padding: 0.7rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    transition: border 0.2s;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px #6366f133;
+}
+
+.modern-btn {
+    background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+    color: #fff;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    margin-top: 0.5rem;
+}
+
+.modern-btn:hover {
+    background: linear-gradient(90deg, #60a5fa 0%, #6366f1 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.result-box {
+    margin: 2rem auto 0 auto;
+    max-width: 400px;
+    background: #f9fafb;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px 0 rgba(99, 102, 241, 0.08);
+    padding: 1.5rem 1.2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #374151;
+    display: none;
+    animation: fadeIn 0.7s;
+}
+
+.result-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.result-label {
+    font-weight: 600;
+    color: #6366f1;
+    font-size: 1.1rem;
+}
+
+.result-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #10b981;
+}
+
+.result-content.error {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
