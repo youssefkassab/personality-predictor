@@ -35,9 +35,9 @@ async function main() {
 
 
 
-app.listen(3000, () => {
-    console.log('Server is running on port 3000');
-});
+// app.listen(3000, () => {
+//     console.log('Server is running on port 3000');
+// });
 app.use((req,res,next)=>{
     res.setHeader("Access-Control-Allow-Origin","*")
     res.setHeader("Access-Control-Allow-Methods","*")
@@ -52,3 +52,4 @@ app.post('/result', (req, res) => {
     res.send(PersonalityResult);
 });
 
+module.exports = app;
