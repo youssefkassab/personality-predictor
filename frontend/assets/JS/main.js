@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         };
         try {
-            const response = await fetch('http://localhost:3000/result', {
+            const response = await fetch('/api/result', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
